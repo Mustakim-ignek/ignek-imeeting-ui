@@ -1,0 +1,196 @@
+select.form-control {
+    background: #fff;
+  }
+  .SelectContainer {
+    position: relative;
+    height: 45px;
+  }
+  .SelectContainer select::placeholder {
+    color: transparent;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .SelectContainer select {
+    background: transparent;
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #e6e7e9;
+    border-radius: 8px;
+    font-size: 16px;
+    padding: 0 20px;
+    outline: none;
+    background: none;
+    z-index: 1;
+    color: #0a111f;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  
+  /* Hide the placeholder texts (a) */
+  .SelectContainer select::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: transparent;
+    opacity: 0; /* Firefox */
+  }
+  
+  .SelectContainer .icon{
+      position: absolute;
+      top: 50%;
+      left: auto;
+      right: 15px;
+      transform: translateY(-50%);
+  }
+  
+  .SelectContainer select:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: transparent;
+  }
+  
+  .SelectContainer select::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: transparent;
+  }
+  
+  .SelectContainer .floatLabel {
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    padding: 0 4px;
+    color: #6c7078;
+    font-size: 12px;
+    transition: 0.5s;
+    z-index: 0;
+  }
+  
+  .SelectContainer .floatLabel span {
+    color: #e79d73;
+  }
+  
+  .SelectContainer select:focus + .floatLabel {
+    top: -7px;
+    left: 15px;
+    z-index: 10;
+    font-size: 12px;
+    font-weight: 600;
+    color: #6c7078;
+    background-color: white;
+  }
+  
+  .SelectContainer select:focus {
+    border: 1px solid #e6e7e9;
+  }
+  
+  .SelectContainer select.focus:not(:placeholder-shown) + .floatLabel {
+    top: -10px;
+    left: 15px;
+    z-index: 10;
+    font-size: 12px;
+    font-weight: 600;
+    color: #6c7078;
+    background: #fff;
+  }
+  
+  .SelectContainer select:focus + .floatLabel {
+    top: -10px;
+    left: 15px;
+    z-index: 10;
+    font-size: 12px;
+    font-weight: 600;
+    color: #6c7078;
+    background: #fff;
+  }
+  
+  .SelectContainer.inValid select {
+    border-color: #e79d73;
+  }
+  
+  .SelectContainer + span {
+    font-size: 12px;
+    margin-left: 12px;
+  }
+  
+  .SelectContainer.inValid select + .floatLabel,
+  .is-danger {
+    color: #e79d73 !important;
+  }
+  
+  .custom-role-select .css-5ivqvw,
+.custom-role-select .css-1ej03j2 {
+  padding:10px 10px 10px !important;
+  border-radius: 12px !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  border: 1px solid #e6e7e9 !important;
+  align-items: center !important;
+  box-shadow: none !important;
+  justify-content: center;
+  width: 100%;
+}
+.custom-role-select .css-5ivqvw span,.custom-role-select .css-5ivqvw .css-1v99tuv,
+.custom-role-select .css-1ej03j2 span ,.custom-role-select .css-1ej03j2  .css-1v99tuv{
+  color: #6c7078;
+  font-weight: 400;
+  font-size: 14px;
+}
+.custom-role-select .css-5ivqvw span b,
+.custom-role-select .css-1ej03j2 span b {
+  font-weight: 400;
+  font-size: 14px;
+  color: #0a111f;
+  margin-left: 6px;
+}
+
+.custom-role-select .css-1f7frdh-option input[type="checkbox"],
+.custom-role-select .css-haiizf-option input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  /* For iOS < 15 to remove gradient background */
+  background-color: #fff;
+  /* Not removed via appearance */
+  margin: 0;
+}
+
+.custom-role-select .css-1f7frdh-option input[type="checkbox"],
+.custom-role-select .css-haiizf-option input[type="checkbox"] {
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width:24px;
+  height:24px;
+  border: 0.15em solid #e6e7e9;
+  border-radius: 6px;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
+
+.custom-role-select .css-1f7frdh-option input[type="checkbox"]:checked,
+.custom-role-select .css-haiizf-option input[type="checkbox"]:checked {
+  border-color: #144B8D;
+}
+
+
+.custom-role-select .css-1f7frdh-option input[type="checkbox"]::before,
+.custom-role-select .css-haiizf-option input[type="checkbox"]::before{
+  content: "";
+  width: 12px;
+  height: 12px;
+  transform: scale(0) !important;
+  transition: 120ms transform ease-in-out;
+  transform-origin: bottom left;
+  clip-path:polygon(41% 58%, 0 50%, 50% 100%, 100% 16%, 89% 0%, 45% 70%);
+  background: #144B8D;
+}
+
+.custom-role-select .css-1f7frdh-option input[type="checkbox"]:checked::before,
+.custom-role-select .css-haiizf-option input[type="checkbox"]:checked::before{
+  transform: scale(1) !important;
+}

@@ -1,0 +1,58 @@
+.file_upload {
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  input[type=file] {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .file_upload button{
+    width: 120px;
+    height: 120px;
+    background: rgb(231 157 115 / 50%);
+    /* opacity: 0.05; */
+    border-radius: 50%;
+    border-radius: 100px;
+    overflow:
+    hidden;
+    margin: auto;
+    position: relative;
+    border: none;
+    z-index: 1;
+  }
+  
+  .file_upload img{
+    width: 120px;
+      height: 120px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      cursor: pointer;
+      z-index: 2;
+      border-radius: 50%;
+      object-fit: cover;
+  }
+  
+  .file_upload .update{
+    width: 120px;
+      height: 120px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      cursor: pointer;
+      z-index: 2;
+      border-radius: 50%;
+      object-fit: cover;
+      background: transparent;
+  }

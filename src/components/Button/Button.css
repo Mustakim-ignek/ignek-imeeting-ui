@@ -1,0 +1,21 @@
+.custom-btn{
+    width: auto;
+    padding: 10px  24px 10px 24px;
+    border-radius: 12px;
+    border: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+.btn-primary,.btn-primary:hover{
+  background: #144B8D;
+    color: #fff;
+}
+.btn-secondary,.btn-secondary:hover{
+    background: #F3F6F9;
+    color: #144B8D;
+}
+
+.btn-danger,.btn-danger:hover{
+    background: #DD7878;
+    color: #fff;
+}

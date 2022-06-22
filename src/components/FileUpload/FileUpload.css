@@ -1,0 +1,47 @@
+/* .file-attached {
+    background: #fff;
+    border: 1px dashed #CECFD2;
+    border-radius: 8px;
+    padding: 24px;
+} */
+
+.file-name-wrap {
+    padding: 16px;
+    background: #f9f9f9;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.file-attached .progress-success .progress-bar{
+    background-color: #81AB96;
+}
+
+.file-attached  .progress-bar{
+    background-color: #144B8D;
+}
+
+.file-name{
+    color: #0A111F;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Poppins';
+    margin-left: 16px;
+}
+
+.file-attached .progress{
+    height: 0.2rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.file-attached .progress-group-addon{
+    display: none;
+}
+
+.file-action  div{
+    width: 20px;
+    cursor: pointer;
+}

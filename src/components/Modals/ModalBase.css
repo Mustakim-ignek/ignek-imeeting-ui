@@ -1,0 +1,138 @@
+.modal-dialog {
+    max-width: 720px !important;
+    animation: slide-down 300ms ease-out forwards;
+  }
+  .modal-dialog.small {
+    max-width: 560px !important;
+  }
+  
+  .modal-title {
+    font-size: 32px !important ;
+    font-weight: 700 !important;
+    font-family: "Poppins";
+    line-height: 43px !important;
+  }
+  
+  /* .backdrop,.backdrop-confirm{
+    background-color: #393a4a;
+      height: 100vh;
+      left: 0;
+      position: fixed;
+      top: 0;
+      width: 100vw;
+      z-index: 1040;
+      opacity: .8;
+  } */
+  .backdrop-confirm {
+    z-index: 1050;
+  }
+  
+  .modal-footer {
+    padding: 10px 20px;
+  }
+  .modal-body {
+    margin-top: 0;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  .modal {
+    display: block !important;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    background-color: rgb(57, 58, 74, 0.8);
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 1040;
+  }
+  .modal-header {
+    padding: 10px 24px 0px !important;
+    height: 5rem !important;
+  }
+  .modal-header,
+  .modal-footer,
+  .modal-body {
+    border: none !important;
+  }
+  .modal-header button {
+    width: 44px;
+    background: #f8f8f8;
+    padding: 12px;
+    height: 44px;
+    border-radius: 8px;
+    opacity: 1;
+  }
+  .modal-header button svg {
+    color: #aeb0b5;
+    width: 20px;
+    height: 20px;
+  }
+  .modal-header button.trash {
+    background: #fcf1f1;
+  }
+  
+  .modal-header button.trash svg {
+    color: #dd7878;
+  }
+  
+  .view-table td:first-child,
+  .view-table th:first-child {
+    text-align: left;
+  }
+  .view-table td:last-child,
+  .view-table th:last-child {
+    text-align: right;
+  }
+  
+  .dropdown-item {
+    padding: 0;
+  }
+  
+  .user-dropdown-menu .dropdown-item a {
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 14px;
+    background: #fff;
+    color: #0a111f;
+    display: block;
+  }
+  .user-dropdown-menu .dropdown-item.active,
+  .user-dropdown-menu .dropdown-item:hover {
+    background: transparent;
+    color: #0a111f;
+  }
+  
+  @media (max-width: 768px) {
+    .modal-dialog {
+      max-width: 560px !important;
+    }
+    .modal-title {
+      font-size: 24px !important;
+      font-weight: 700 !important;
+      font-family: "Poppins";
+      line-height: 28px !important;
+    }
+    
+  }
+  @media (max-width: 575px) {
+    .modal-body {
+      padding: 0 15px !important;
+    }
+    .modal-footer {
+      box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%) !important;
+    }
+  }
+  
+  @keyframes slide-down {
+    from {
+      opacity: 0;
+      transform: translateY(-3rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

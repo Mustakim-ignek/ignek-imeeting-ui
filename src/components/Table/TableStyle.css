@@ -1,0 +1,177 @@
+.table{
+    white-space: nowrap;
+  }
+  
+  .table th {
+    font-size: 12px;
+    color: #6c7078;
+    text-transform: uppercase;
+    font-family: "Poppins";
+    font-weight: 500;
+  
+  }
+  
+  .table td {
+    border-bottom-width: 0;
+  }
+  
+  .table thead td, .table thead th{
+    border-bottom: none;
+        
+  }
+  
+  .table td,
+  .table tbody th {
+    font-size: 14px;
+    color: #0a111f;
+    font-family: "Poppins";
+    font-weight: 400;
+    text-align: left;
+  }
+  
+  .search {
+    background: #f8f8f8;
+    border-radius: 8px;
+    color: #6c7078;
+    max-width: 215px;
+    width: 100%;
+  }
+  
+  .table .filter-arrow-up svg {
+    transform: rotate(180deg);
+  }
+  .table .filter-arrow-down svg {
+    transform: rotate(0deg);
+  }
+  .search_filter {
+    position: relative;
+    max-width: 212px;
+    width: 100%;
+  }
+  .search_filter input {
+    width: 100%;
+    border-radius: 0%;
+    background: #f8f8f8;
+    border-radius: 8px;
+  }
+  
+  .search_filter span {
+    position: absolute;
+    width: auto;
+    top: 50%;
+    transform: translatey(-50%);
+    right: 15px;
+  }
+  
+  .item_per_page {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .item_per_page .item_num {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 32px;
+  }
+  
+  .item_per_page .item_num span {
+    color: #aeb0b5;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: "Poppins";
+    padding: 2px 4px;
+    cursor: pointer;
+  }
+  
+  .item_per_page .item_num span.active {
+    color: #144b8d;
+    position: relative;
+  }
+  
+  .item_per_page .item_num span.active::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    margin: auto;
+    bottom: -7px;
+    background: #144b8d;
+    height: 2px;
+    left: 0;
+  }
+  
+  .item_per_page_title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #6c7078;
+    font-family: "Poppins";
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+  
+  .pagination .page-item.active .page-link {
+    border: 1px solid #144b8d;
+    border-radius: 4px;
+    background: transparent;
+    color: #144b8d;
+    opacity: 1;
+  }
+  .pagination .page-item .page-link {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .pagination_wrap .pagination {
+    justify-content: flex-end;
+  }
+  
+  .table-responsive {
+    margin-bottom: 0;
+    padding-bottom: 1rem;
+  }
+  
+  .search_filter input {
+    padding-right: 35px;
+  }
+  
+  .custom-dropdown-menu {
+   
+    max-height: 497px;
+    max-width: 126px;
+    min-height: 110px;
+    min-width: fit-content;
+    position: relative;
+    width: 85px;
+    height: 120px;
+  }
+  
+  
+  table td .dropdown-toggle{
+    cursor: pointer;
+    color: #0a111f;
+  }
+  table td .dropdown-toggle:hover{
+    color: #144b8d;
+  }
+  @media (max-width:768px) {
+    .item_per_page .item_num{
+      display: flex;
+      grid-gap: 0px;
+      margin-left: 10px;
+    }
+  }
+  
+  @media (max-width:575px) {
+    .search_filter{
+      width: 100%;
+      max-width: 100%;
+    }
+    .item_per_page{
+      display: none;
+    }
+    .pagination_wrap .pagination{
+      justify-content: center;
+    }
+  }
