@@ -1,4 +1,4 @@
-import ClayIcon from '@clayui/icon';
+import ClayIcon from '@clayui/icon'
 import React, { useEffect } from 'react'
 import { spritemap } from '../SvgIcons/SvgIcon'
 import Button from '../Button/Button'
@@ -34,15 +34,15 @@ const ModalBase = ({
             defaultModal ? 'small' : 'default'
           }`}
         >
-          <div class='modal-content'>
-            <div class='modal-header mb-4'>
-              <div class='modal-title' id='clayDefaultModalLabel'>
+          <div className='modal-content'>
+            <div className='modal-header mb-4'>
+              <div className='modal-title' id='clayDefaultModalLabel'>
                 {title}
               </div>
               {onEdit && (
                 <button
                   type='button'
-                  class='close edit mr-4 d-none d-sm-block'
+                  className='close edit mr-4 d-none d-sm-block'
                   onClick={onEdit}
                 >
                   <ClayIcon spritemap={spritemap} symbol='pencil' />
@@ -51,21 +51,21 @@ const ModalBase = ({
               {onTrash && (
                 <button
                   type='button'
-                  class='close trash mr-4 d-none d-sm-block'
+                  className='close trash mr-4 d-none d-sm-block'
                   onClick={onTrash}
                 >
                   <ClayIcon spritemap={spritemap} symbol='trash' />
                 </button>
               )}
-              <button type='button' class='close' onClick={onClose}>
+              <button type='button' className='close' onClick={onClose}>
                 <ClayIcon spritemap={spritemap} symbol='times' />
               </button>
             </div>
-            <div class='modal-body'>{children}</div>
-            <div class='modal-footer mt-5 mt-sm-0'>
-              <div class='modal-item-last w-100 '>
+            <div className='modal-body'>{children}</div>
+            <div className='modal-footer mt-5 mt-sm-0'>
+              <div className='modal-item-last w-100 '>
                 <div
-                  class={`btn-group w-100 justify-content-end ${
+                  className={`btn-group w-100 justify-content-end ${
                     onEdit && onTrash ? 'd-none d-sm-flex' : ''
                   }`}
                 >
@@ -74,7 +74,7 @@ const ModalBase = ({
                     styleType='secondary'
                     onClick={onClose}
                     style={{ marginRight: '24px' }}
-                    otherClass={`flex-grow-1 flex-sm-grow-0 px-4 py-3`}
+                    otherclassName={`flex-grow-1 flex-sm-grow-0 px-4 py-3`}
                   />
 
                   <Button
@@ -82,24 +82,24 @@ const ModalBase = ({
                     type='submit'
                     styleType='primary'
                     onClick={onSave}
-                    otherClass={`flex-grow-1 flex-sm-grow-0 px-4 py-3`}
+                    otherclassName={`flex-grow-1 flex-sm-grow-0 px-4 py-3`}
                   />
                 </div>
                 {onEdit && onTrash && (
-                  <div class='btn-group w-100  d-sm-none'>
+                  <div className='btn-group w-100  d-sm-none'>
                     <Button
                       label='Edit'
                       styleType='secondary'
                       onClick={onEdit}
                       style={{ marginRight: '24px' }}
-                      otherClass={`flex-grow-1 flex-sm-grow-0 px-4 py-3`}
+                      otherclassName={`flex-grow-1 flex-sm-grow-0 px-4 py-3`}
                     />{' '}
                     <Button
                       label='Delete'
                       type='submit'
                       styleType='danger'
                       onClick={onTrash}
-                      otherClass={`flex-grow-1 flex-sm-grow-0 px-4 py-3`}
+                      otherclassName={`flex-grow-1 flex-sm-grow-0 px-4 py-3`}
                     />
                   </div>
                 )}

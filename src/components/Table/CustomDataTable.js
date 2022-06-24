@@ -49,8 +49,7 @@ function CustomDataTable({ columns, data, children }) {
   const [active, setActive] = useState(1);
 
   React.useEffect(() => {
-    // props.dispatch({ type: actions.resetPage })
-    // gotoPage(active - 1);
+    gotoPage(active - 1);
   }, [globalFilter, page, active]);
 
   return (
@@ -89,14 +88,18 @@ function CustomDataTable({ columns, data, children }) {
                       >
                         {column.render("Header")}
                         <span>
-                          {column.isSortedDesc ? (
-                            <span className="filter-arrow-down ml-2">
-                              {<FilterArrow />}
-                            </span>
+                          {column.canSort ? (
+                            column.isSortedDesc ? (
+                              <span className="filter-arrow-up ml-2">
+                                {<FilterArrow />}
+                              </span>
+                            ) : (
+                              <span className="filter-arrow-down ml-2">
+                                {<FilterArrow />}
+                              </span>
+                            )
                           ) : (
-                            <span className="filter-arrow-up ml-2">
-                              {<FilterArrow />}
-                            </span>
+                            ''
                           )}
                         </span>
                       </th>

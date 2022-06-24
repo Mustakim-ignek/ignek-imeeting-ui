@@ -13,17 +13,47 @@ npm install --save ignek-imeeting-ui
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
+import React from 'react'
 
-import MyComponent from 'ignek-imeeting-ui'
+import {Button} from 'ignek-imeeting-ui'
+
 import 'ignek-imeeting-ui/dist/index.css'
-
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
+const Button = () => {
+  return <Button />
 }
 ```
+## Components
+
+Table of Contents
+=================
+
+- [Button](#button)
+- [PageLoader](#pageloader)
+- [Input](#input)
+- [SelectInput](#selectinput)
+- [CustomDataTable](#customdatatable)
+- [MultipleFileUploadField](#multiplefileuploadfield)
+- [UploadImage](#uploadimage)
+- [MultipleSelect](#multipleselect)
+- [ModalBase](#modalbase)
+- [Tabs](#tabs)
+- [SimpleTable](#simpletable)
+- [createNameImage](#createnameimage)
+- [getRandomColor](#getrandomcolor)
+
+## Button
+
+```bash
+import {Button} from ignek-imeeting-ui
+```
+
+## Property
+
+| Props         |  Description  |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
+
 
 ## License
 

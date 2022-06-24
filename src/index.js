@@ -14,6 +14,10 @@ import MultipleFileUploadField from './components/FileUpload/FileUpload';
 import UploadImage from './components/ImageUpload/ImageUpload';
 import MultipleSelect from './components/SelectInput/MultipleSelect';
 import ModalBase from './components/Modals/ModalBase';
+import Tabs from "./components/Tabs/Tabs";
+import SimpleTable from "./components/Table/SimpleTable";
+import {createNameImage, getRandomColor} from './components/NameImageGenrator/NameImage'
+
 import "@clayui/css/lib/css/atlas.css";
 
 export {
@@ -25,5 +29,9 @@ export {
   MultipleFileUploadField,
   UploadImage,
   MultipleSelect,
-  ModalBase
+  ModalBase,
+  Tabs,
+  SimpleTable,
+  createNameImage,
+  getRandomColor
 }

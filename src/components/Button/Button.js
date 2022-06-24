@@ -1,36 +1,32 @@
-import React from "react";
-import "./Button.css";
-
-/**
- *
- * @param {{type: string,styleType:string, otherClass: object, onClick: func,backgroundColor:string ,color:string,style:object,label:string}} props
- */
+import React from 'react'
+import './Button.css'
+import PropTypes from 'prop-types';
 
 
-const Button = (props) => {
+const Button = ({styleType,otherClass,onClick,label,type,style}) => {
   return (
     <button
-      type={props.type}
-      className={`custom-btn btn-${props.styleType} ${props.otherClass ? props.otherClass : ''}`}
-      onClick={props.onClick}
+      type={type}
+      className={`custom-btn btn-${styleType} ${
+        otherClass ? otherClass : ''
+      }`}
+      onClick={onClick}
       style={{
-        ...props.style,
+        ...style
       }}
     >
-      {props.label}
+      {label}
     </button>
-  );
+  )
+}
+
+Button.propTypes = {
+  type: PropTypes.string,
+  onClick: PropTypes.func,
+  style: PropTypes.object,
+  otherClass: PropTypes.string,
+  label:PropTypes.string,
 };
 
-// Button.propTypes = {
-//   color: PropTypes.string || '',
-//   children: PropTypes.node,
-//   type: PropTypes.string,
-//   onClick: PropTypes.func,
-//   children: PropTypes.element.isRequired,
-//   backgroundColor: PropTypes.string,
-//   style: PropTypes.object,
-//   otherClass: PropTypes.string,
-// };
 
-export default Button;
+export default Button

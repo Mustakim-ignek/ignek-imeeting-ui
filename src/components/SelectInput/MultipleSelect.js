@@ -4,10 +4,10 @@ import "./SelectStyle.css";
 
 /**
  *
- * @param {{option:array,width:string}} props
+ * @param {{option:array,width:string,placeholderButtonLabel:string}} props
  */
 
-const MultipleSelect = ({ option, width }) => {
+const MultipleSelect = ({ option, width,placeholderButtonLabel }) => {
   const [selectedOptions, setSelectedOptions] = useState([]);
 
   //
@@ -64,7 +64,6 @@ const MultipleSelect = ({ option, width }) => {
     } else {
       return (
         <span>
-          {" "}
           {placeholderButtonLabel} <b>selected {value.length}</b>{" "}
         </span>
       );
@@ -81,7 +80,7 @@ const MultipleSelect = ({ option, width }) => {
         options={option}
         onChange={onChange}
         value={selectedOptions}
-        placeholderButtonLabel="Role"
+        placeholderButtonLabel={placeholderButtonLabel}
         getDropdownButtonLabel={getDropdownButtonLabel}
         setState={setSelectedOptions}
       />

@@ -3,7 +3,7 @@ import { useDropzone } from "react-dropzone";
 import { useField } from "formik";
 import { SingleFileUploadWithProgress } from "./SingleUpload";
 import  FileUploadError  from "./FileUploadError";
-
+import PropTypes from 'prop-types';
 import Button from "../Button/Button";
 import './FileUpload.css'
 import {
@@ -169,4 +169,9 @@ const  MultipleFileUploadField = ({ name }) => {
     </section>
   );
 }
+
+MultipleFileUploadField.propTypes= {
+  name:PropTypes.string
+}
+
 export default MultipleFileUploadField

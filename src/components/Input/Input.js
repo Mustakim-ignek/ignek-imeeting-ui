@@ -3,7 +3,7 @@ import "./Input.css";
 
 /**
  *
- * @param {{type:string,id:any,name:string,value:string|number|readonly ,onChange:func|object,label:string,required:boolean,onBlur:func|object,isInvalid:string}} props
+ * @param {{type:string,id:any,name:string,value:string | number |  readonly ,onChange:func | object,label:string,required:boolean,onBlur:func|object,isInvalid:string}} props
  */
 
 const Input = (props) => {

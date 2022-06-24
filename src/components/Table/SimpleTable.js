@@ -9,7 +9,7 @@ import { FilterArrow } from '../SvgIcons/SvgIcon'
  */
 
 
-const Table = ({columns,data}) => {
+const SimpleTable = ({columns,data}) => {
   const props = useTable(
     {
       columns,
@@ -68,4 +68,4 @@ const Table = ({columns,data}) => {
   );
 };
 
-export default Table;
+export default SimpleTable;
